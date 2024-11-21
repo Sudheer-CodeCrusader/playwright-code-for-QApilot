@@ -18,9 +18,8 @@ test.describe("Test suit", () => {
 
   let Login = new LoginAndLogout();
   // let Android = new CloudAndroid();
-  let Android = new CloudAndroid();
+  let iOS = new CloudiOS();
   test.beforeAll(async ({ browser }) => {
-    try{
     // const context = await browser.newContext();
     //page = await context.newPage();
     page = await browser.newPage();
@@ -28,9 +27,6 @@ test.describe("Test suit", () => {
     await page.goto(jsondata.URL);
     await page.waitForLoadState('load');
     await page.reload();
-    }catch(error){
-      console.error('Error occurred during beforeAll setup:', error);
-    }
   });
 
   test.afterAll(async ({ browser }) => {
@@ -80,11 +76,11 @@ test.describe("Test suit", () => {
 
   }
   });
-  test('Test 3: Search for existing projects.', async () => {
+  test('Test 3: Search the existing project', async () => {
     test.setTimeout(240000);
     try{
     await page.waitForTimeout(1000);
-    await Android.Exeisting_Project_Search_Functionality(page);
+    await iOS.Exeisting_Project_Search_Functionality(page);
     await page.waitForLoadState('load');
     await page.waitForTimeout(5000);
     const screenshotPath = path.join(screenshotFolder, 'ExistingProjectSearch.png');
@@ -101,7 +97,7 @@ test.describe("Test suit", () => {
     test.setTimeout(240000);
     try{
     await page.waitForTimeout(1000);
-    await Android.Choose_your_Connection_Configuration(page);
+    await iOS.Choose_your_Connection_Configuration(page);
     await page.waitForLoadState('load');
     await page.waitForTimeout(3000);
     const screenshotPath = path.join(screenshotFolder, 'Choose_Connection.png');
@@ -119,7 +115,7 @@ test.describe("Test suit", () => {
     test.setTimeout(240000);
     try {
       await page.waitForTimeout(1000);
-      await Android.SelectApp_TestCase(page);
+      await iOS.SelectApp_TestCase(page);
       await page.waitForLoadState('load');
       await page.waitForTimeout(3000);
       const screenshotPath = path.join(screenshotFolder, 'Select App & Test Case.png');
@@ -138,7 +134,7 @@ test.describe("Test suit", () => {
     test.setTimeout(240000);
     try {
       await page.waitForTimeout(1000);
-      await Android.Testcase_Recording_Functionality(page);
+      await iOS.Testcase_Recording_Functionality(page);
       await page.waitForLoadState('load');
       await page.waitForTimeout(3000);
       const screenshotPath = path.join(screenshotFolder, 'RecordingTestCase.png');

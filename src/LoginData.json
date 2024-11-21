@@ -1,0 +1,25 @@
+{
+    "URL": "https://stgapp.qapilot.io/automation/index.html#/",
+    "usernamefield": "//input[@id='loginid']",
+    "PasswordField": "//input[@id='password']",
+    "TenantUsername": "testingplaywright7@gmail.com",
+    "TenantPassword": "Testing@178",
+    "InValidusername": "anjireddy@digitral.com",
+    "InvalidPassword": "Digitral@",
+    "ProfileIcon": "//span[contains(text(),'TA')]",
+    "ProfileExpectedName": "Swapnil Mangela",
+    "ProfileActualName": "//h5[contains(text(),'Swapnil Mangela')]",
+    "TenantLogOut": "//span[contains(text(),'Logout')]",
+    "LoginExpectedErrorMessage": "Invalid LoginID and Password.",
+    "LoginActualErrorMessage": "//span[contains(text(),'Invalid LoginID and Password.')]",
+    "InvalidUsernameExpectedMessage": "Authentication Failed",
+    "InvalidUsernameActualMessage": "//span[contains(text(),'Authentication Failed')]",
+    "AlertPopupAccept": "//span[contains(text(),'Proceed')]"
+   
+  
+  
+  
+  
+    
+  
+  }

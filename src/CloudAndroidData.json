@@ -1,0 +1,33 @@
+{
+    "ProjectSearchField": "//input[@id='qksearch']",
+    "ProjectName": "Android For Cloud",
+    "ClickOnProjectName": "//h4[@id='projname_0']",
+    "ConfigurationIcon": "//span[contains(text(),'Configurations')]",
+    "RecordingOptionSelection": "//a[contains(text(),'Recorder')]",
+    "CloudDeviceOptionSelection": "//h4[contains(text(),'Cloud Devices')]",
+    "AndroidDeviceSelection": "//h4[contains(text(),'Android')]",
+    "BrowserStackOptionSelection": "//h4[contains(text(),'browserstack')]",
+    "VersionSelectionDropdownField": "//span[contains(text(),'Select a Versions')]",
+    "Version1": "//div[contains(text(),'v1.22.3')]",
+    "Version2": "//div[contains(text(),'v2.2.1')]",
+    "SelectDeviceDropdownField": "//span[contains(text(),'Select a Device')]",
+    "DeviceSelection": "//body/div[6]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[3]",
+    "NextButton": "//span[contains(text(),'Next')]",
+    "SelectAppField": "//span[contains(text(),'Select a App')]",
+    "AppSelection": "//div[contains(text(),'Automation')]",
+    "SelectModuleField": "//span[contains(text(),'Select a Module')]",
+    "ModuleSelection": "//div[contains(text(),'Default')]",
+    "SelectTestCaseField": "//span[contains(text(),'Select a Testcase')]",
+    "TestCaseSelection": "//div[contains(text(),'Default')]",
+    "SelectPageField": "//span[contains(text(),'Select a Page')]",
+    "PageSelection": "//div[contains(text(),'Default')]",
+    "LaunchButton": "//body/div[@id='root']/div[1]/div[1]/section[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/button[1]",
+    "RetryButton": "//button[@id='btndelyes']",
+    "ElementSelection": "//body/div[@id='root']/div[1]/div[1]/section[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/h4[1]",
+    "ClickElementOption": "//h5[contains(text(),'Click Element')]",
+    "CreateStepButton": "//button[@id='recorder_createstep']",
+    "RecordingStopButton": "//header/div[1]/div[3]/button[1]",
+    "YesButton": "//span[contains(text(),'Yes')]"
+    
+    
+}
