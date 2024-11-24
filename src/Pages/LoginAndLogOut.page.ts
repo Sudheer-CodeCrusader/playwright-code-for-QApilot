@@ -504,7 +504,7 @@ public async performSearchnoprojects(page: Page) {
       const emailInputBoxXPath = jsondata.emailreportinputbox;
       await page.waitForSelector(emailInputBoxXPath, { timeout: 5000 });
       console.log("Email input box found.");
-      const emailText = "saisudheer.ka@digitral.com";
+      const emailText = "x@ycom";
       await page.fill(emailInputBoxXPath, emailText);
       console.log(`Entered email: '${emailText}'`);
   
